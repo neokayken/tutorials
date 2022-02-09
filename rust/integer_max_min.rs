@@ -1,5 +1,4 @@
 fn main() {
-
     println!("\n[Rust Tutrorial]");
 
     println!("--- Integer Types Signed ---\n");
