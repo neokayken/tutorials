@@ -1,4 +1,4 @@
-# tutorials
+# Programming Tutorials
 programming tutorial for beginner
 
 1. Rust
