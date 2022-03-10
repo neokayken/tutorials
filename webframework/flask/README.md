@@ -21,7 +21,7 @@ what matters is to contain the runtime and version control.
 
 to start flask
 
-```
+```shell
 pip install Flask
 ```
 
