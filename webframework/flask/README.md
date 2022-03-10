@@ -19,8 +19,11 @@ what matters is to contain the runtime and version control.
 
 - start flask
 
-to start flask,
+to start flask
 
-<pre><code>pip install Flask</code></pre>
+```
+pip install Flask
+```
+
 
 
