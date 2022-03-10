@@ -21,8 +21,6 @@ what matters is to contain the runtime and version control.
 
 to start flask,
 
-<pre><code>
-pip install Flask
-</code></pre>
+<pre><code>pip install Flask</code></pre>
 
 
