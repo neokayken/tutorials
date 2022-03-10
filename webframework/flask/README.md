@@ -21,9 +21,44 @@ what matters is to contain the runtime and version control.
 
 to start flask
 
-```shell
+```
 pip install Flask
 ```
 
+to check if flask works go to python interactive mode and type
+
+```
+import flask
+flask.__version__
+```
+
+you see a flask version it is ready
+exit it out and create a text file like this below
+
+```python
+from flask import Flask
+ 
+print('[Hello, Flask!]')
+app = Flask(__name__)
+ 
+@app.route('/')
+def index():
+    return 'Hello, Flask!'
+ 
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+run the file with python and server will start
+
+```
+Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
+
+you see the console message like this
+open a webbrowser put the URL, you see 'Hello, Flask!' text
+it shows everything is set to go.
+it is a relatively easy job compared to other languages and frameworks
+that is why python so popular also flask.
 
 
