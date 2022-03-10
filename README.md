@@ -5,3 +5,7 @@ programming tutorial for beginner
 2. x86 Assembly Language - NASM
 3. QBASIC - QB64
 4. C Language
+
+# Web Framework Tutorial
+
+1. Flask - python
