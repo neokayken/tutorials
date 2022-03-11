@@ -13,6 +13,8 @@ just open VSC create a html file. file extension should be html to use Emmet Abb
 
 EA(Emmet Abbreviation)
 
+#### hmtl5 skeleton
+
 ```html
 EA: !
 
@@ -30,3 +32,5 @@ EA: !
 </html>
 
 ```
+
+
