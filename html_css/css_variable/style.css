@@ -1,0 +1,40 @@
+:root {
+    --primary-clr: #384CFF;
+    --primary-bg-clr: #BFD2FF;
+    --secondary-clr: #2CB03E;
+    --secondary-bg-clr: #ADFFCD;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: var(--primary-bg-clr);
+    height: 100vh;
+    width: 70%;
+    border: 0;
+}
+
+header {
+    padding: 10px;
+    color: var(--primary-clr);
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+a{
+    color: var(--primary-clr);
+}
+
+article {
+    padding: 10px;
+    color: var(--secondary-clr);
+    background-color: var(--secondary-bg-clr);
+}
+
