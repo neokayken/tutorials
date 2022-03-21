@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src=" https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+</head>
+
+<body>
+    <style>
+        body{
+            margin: 0;
+        }
+        #container {
+            padding: 1em;
+            background-color: #f1dede;
+        }
+        #container h2{
+            font-size: 2em;
+            font-family:'D2Coding';
+            color: rgb(71, 39, 158);
+        }
+    </style>
+    <div id="container"></div>
+
+    <script type="text/babel">
+        var destination = document.querySelector("#container");
+
+        ReactDOM.render(React.createElement(
+            "h2",
+            "null",
+            "배트맨과 로빈"
+        ),destination);
+    </script>
+</body>
+</html>
