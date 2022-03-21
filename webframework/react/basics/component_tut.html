@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src=" https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+</head>
+
+<body>
+    <style>
+        body{
+            margin: 0;
+        }
+        #container {
+            padding: 1em;
+            background-color: #f1dede;
+        }
+        #container h2{
+            font-size: 2em;
+            font-family:'D2Coding';
+            color: rgb(71, 39, 158);
+        }
+        #container-2 h2{
+            font-size: 2em;
+            font-family:'Courier New', Courier, monospace;
+            background-color: rgb(222, 216, 246);
+            color: rgb(154, 39, 158);
+        }
+    </style>
+    <div id="container"></div>
+    <div id="container-2"></div>
+
+    <script type="text/babel">
+
+
+        class HelloWorld extends React.Component {
+            render(){
+                return (
+                    <div>
+                        <h2>Hello React! {this.props.myTarget}</h2>
+                    </div>
+                );
+            }
+        }
+
+        class Buttonify extends React.Component {
+            render(){
+                return (
+                    <div>
+                        <button type={this.props.behavior}>{this.props.children}</button>
+                    </div>
+                );
+            }
+        }
+
+        // ----- deprecated after v16 ----- //
+        // var HelloWorld = React.createClass({
+        //     render: function() {
+        //         return (
+        //             <h2>Hello My Friend</h2>
+        //             );
+        //     }
+        // });
+
+        ReactDOM.render(
+            <div>
+   
+                <HelloWorld myTarget="Mr.CodingGak">
+                    <p>something!</p>        
+                </HelloWorld>
+
+            </div>,
+            document.querySelector("#container")
+        );
+
+        ReactDOM.render(
+            <div>
+                <h2>Hi!</h2>
+                <Buttonify behavior="Submit">SEND DATA</Buttonify>
+            </div>, document.querySelector("#container-2")
+        );
+    </script>
+</body>
+</html>
