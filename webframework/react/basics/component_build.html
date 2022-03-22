@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src=" https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+</head>
+
+<body>
+    <style>
+        body{
+            margin: 0;
+        }
+        #container {
+            height: 90vh;
+            padding: 1em;
+            background-color: #9EC3FF;
+        }
+
+    </style>
+    <div id="container"></div>
+
+    <script type="text/babel">
+
+        class Square extends React.Component {
+            render(){
+                let style = {
+                    height: 150,
+                    backgroundColor: "#43C83C"
+                };
+                return(
+                    <div style={style}>
+                    </div>
+                );
+            }
+        }
+        class Label extends React.Component {
+            render(){
+                let style = {
+                    fontFamily: "D2Coding",
+                    fontWeight: "bold",
+                    padding: ".3em",
+                    fontSize: "1.2em",
+                    lineHeight: "2em",
+                    margin: 0
+                };
+                return(
+                    <p style={style}>#43C83C</p>
+                );
+            }
+        }
+        class Card extends React.Component {
+            render(){
+                let style = {
+                    height: 200,
+                    width: 150,
+                    padding: 0,
+                    backgroundColor: "#FFFFFF",
+                    boxShadow: "3px 3px 5px #152967",
+                    textAlign: "center"
+                };
+                return(
+                    <div style={style}>
+                        <Square/>
+                        <Label/>
+                    </div>
+                );
+            }
+        }
+
+        var destination = document.querySelector("#container");
+        ReactDOM.render(
+            <div>
+                <h2>Component Tutorial</h2>
+                <Card/>
+            </div>, destination            
+        );
+
+    </script>
+</body>
+</html>
