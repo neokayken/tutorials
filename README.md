@@ -11,3 +11,7 @@ programming tutorial for beginner
 1. Flask - python
 2. Bootstrp
 3. React
+
+# Others
+
+1. AutoHotkey
